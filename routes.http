@@ -1,0 +1,26 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Video do node bill",
+    "description": "Amostradinho",
+    "duration": 100
+}
+
+###
+
+GET http://localhost:3333/videos
+###
+
+PUT http://localhost:3333/videos/612cc5b0-4d06-4863-96a0-444f54813cd4
+Content-type: application/json
+
+{
+    "title":"Video do Receba",
+    "description":"Amostradinho",
+    "duration": 100
+}
+
+###
+
+DELETE http://localhost:3333/videos/612cc5b0-4d06-4863-96a0-444f54813cd4
