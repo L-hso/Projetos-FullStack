@@ -1,0 +1,11 @@
+POST http://localhost:3333/cadastrar
+Content-Type: application/json
+
+{
+  "user":"Luis",
+  "password":"123456"
+}
+
+###
+
+GET http://localhost:3333/cadastrar
