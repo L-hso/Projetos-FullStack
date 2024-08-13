@@ -3,9 +3,9 @@ import cors from "@fastify/cors";
 
 const server = fastify();
 
-await fastify.register(cors, { 
-  origin: "https://symmetrical-space-adventure-r9rj7pxj5jghwq54-5173.app.github.dev/",
-  credentials: true
+await server.register(cors, { 
+  origin: "http://localhost:5173",
+  credentials: true,
 });
 
 
