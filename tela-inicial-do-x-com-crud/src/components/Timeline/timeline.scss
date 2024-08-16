@@ -1,0 +1,9 @@
+@import "../../miscelaneous/variables/twitter_colors.scss";
+
+#timeline {
+
+  min-height: 100vh;
+  
+
+  border-left: 1px solid $containers-border;
+}
