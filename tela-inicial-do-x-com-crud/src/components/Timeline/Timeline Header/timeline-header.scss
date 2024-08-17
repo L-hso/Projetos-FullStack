@@ -1,0 +1,104 @@
+@import "../../../miscelaneous/variables/twitter_colors.scss";
+
+header {
+  width: 100%;
+
+  #timeline_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: $text-priority-1;
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 24px 20px;
+    border-bottom: 1px solid $containers-border;
+  }
+
+  #tweet_section {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    min-height: 152px;
+    
+    padding: 24px 20px;
+    
+    overflow: auto;
+
+    #tweet_profile {
+      display: block;
+      align-self: flex-start;
+
+      width: 76px;
+      padding-right: 16px;
+
+      img{
+        max-width: 56px;
+        border-radius: 9999px;
+      }
+    }
+
+    #tweet_send_section {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      width: 100%;
+      height: 100%;
+
+      #tweet_input {
+        resize: none;
+        flex-grow: 1;
+
+        width: 100%;
+        padding: 15px 0;
+        
+        border: none;
+        
+        background-color: transparent;
+        color:$text-priority-1;
+        font-size: 20px;
+        font-weight: 400;
+        
+        &::placeholder {
+          font-weight: 600;
+          color: $text-priority-3;
+        }
+
+
+      }
+
+      #tweet_button {
+        display: flex;
+        align-items: center;
+
+        background-color: $primary-blue;
+
+        height: 40px;
+        padding: 16px 24px;
+
+        font-size: 16px;
+        font-weight: 800;
+
+        color: $text-priority-1;
+        border: none;
+        border-radius: 999px;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  #timeline_separator{
+    height: 12px;
+    background-color: #202020;
+
+    border: 1px solid $containers-border ;
+    border-inline: none;
+  }
+}

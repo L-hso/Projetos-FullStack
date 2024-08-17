@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  border: none;
+  outline: none;
+
 
   font-family: Roboto, sans-serif;
 }
@@ -13,5 +16,5 @@
   background-color: #121214;
 
   display: grid;
-  grid-template-columns: 320px calc(1100px - 320px);
+  grid-template-columns: 22.5vw 55vw 22.5vw;
 }

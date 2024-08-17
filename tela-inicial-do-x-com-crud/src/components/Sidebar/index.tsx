@@ -1,5 +1,6 @@
-import { Bell, Bookmark, CircleEllipsis, FileText, Hash,  Mail , User2 } from "lucide-react";
 import "./sidebar.scss";
+
+import { Bell, Bookmark, CircleEllipsis, FileText, Hash,  Mail , User2 } from "lucide-react";
 import { GoHomeFill } from "react-icons/go";
 import { FaTwitter } from "react-icons/fa6";
 

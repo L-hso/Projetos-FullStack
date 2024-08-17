@@ -1,0 +1,10 @@
+@import "../../../miscelaneous/variables/twitter_colors.scss";
+
+#timeline_body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  border-inline: 1px solid $containers-border;
+}

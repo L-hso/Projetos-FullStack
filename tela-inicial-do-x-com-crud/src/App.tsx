@@ -1,14 +1,15 @@
-import { Sidebar } from "./components/Sidebar/Sidebar"
-import { Timeline } from "./components/Timeline/Timeline"
+import { Sidebar } from "./components/Sidebar";
+import { Timeline } from "./components/Timeline";
 
 function App() {
-
   return (
     <>
-    <Sidebar/>
-    <Timeline/>
+      <Sidebar />
+      <Timeline.Body>
+        <Timeline.Header />
+      </Timeline.Body>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
