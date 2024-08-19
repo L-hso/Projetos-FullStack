@@ -1,26 +1,18 @@
-import { useEffect } from "react";
+import { postInfo } from "./components/Timeline/Timeline Post";
 import { Sidebar } from "./components/Sidebar";
 import { Timeline } from "./components/Timeline";
-//import axios from "axios";
-import { postInfo } from "./components/Timeline/Timeline Post";
+import axios from "axios";
 
-
+const posts = await axios.get("https://symmetrical-space-adventure-r9rj7pxj5jghwq54-3333.app.github.dev/posts").then<postInfo[]>(response => response.data);
 
 function App() {
     
-  let posts;
-
-  useEffect( ()=>{
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    posts = fetch("http://localhost:3333/posts").then<postInfo[]>(response=>response.json());
-  }, [])
-
   return (
     <>
       <Sidebar />
       <Timeline.Body>
         <Timeline.Header />
-        {(posts ?? []).map(el=><Timeline.Post info={el}/>)}
+        { posts.map(el=><Timeline.Post info={el}/>) }
       </Timeline.Body>
     </>
   );

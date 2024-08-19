@@ -7,9 +7,11 @@ const server = fastify();
 const posts = [];
 
 await server.register(cors, {
+  
   credentials: true,
-  origin: "https://symmetrical-space-adventure-r9rj7pxj5jghwq54-5173.app.github.dev"
-})
+  origin: "https://symmetrical-space-adventure-r9rj7pxj5jghwq54-5173.app.github.dev",
+
+}) 
 
 server.get("/posts", (request, reply) => {
   return reply.status(200).send(posts);
